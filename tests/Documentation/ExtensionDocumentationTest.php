@@ -60,10 +60,10 @@ final class ExtensionDocumentationTest extends TestCase
     }
 
     #[DataProvider('provideExtensions')]
-    public function testEveryExtensionIsLinkedFromBothIndexes(string $slug): void
+    public function testEveryExtensionIsReachableThroughTheCatalog(string $slug): void
     {
         self::assertMatchesRegularExpression(
-            '/\]\(extensions\/' . $slug . '\.md\)/',
+            '/\]\(extensions\/index\.md\)/',
             $this->read('docs/index.md'),
         );
         self::assertMatchesRegularExpression(

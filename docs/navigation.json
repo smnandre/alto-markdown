@@ -1,0 +1,24 @@
+{
+    "parents": {
+        "extensions/smart-punctuation": "extensions",
+        "extensions/include": "extensions",
+        "extensions/external-links": "extensions",
+        "extensions/footnotes": "extensions",
+        "extensions/source": "extensions",
+        "extensions/code-block-titles": "extensions",
+        "extensions/description-lists": "extensions",
+        "extensions/embeds": "extensions",
+        "extensions/mentions": "extensions",
+        "extensions/highlight": "extensions",
+        "extensions/content-slicer": "extensions",
+        "extensions/tabs": "extensions",
+        "extensions/attributes": "extensions",
+        "extensions/import": "extensions",
+        "extensions/heading-levels": "extensions",
+        "extensions/heading-permalinks": "extensions",
+        "extensions/default-attributes": "extensions",
+        "extensions/link-rewriting": "extensions",
+        "extensions/paired-delimiters": "extensions",
+        "extensions/table-of-contents": "extensions"
+    }
+}

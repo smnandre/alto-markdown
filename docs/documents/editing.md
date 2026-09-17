@@ -27,6 +27,7 @@ The result changes only the section body:
 ## Install
 
 Run Composer.
+
 ```
 
 Available typed edits:
@@ -217,6 +218,10 @@ clears the journal. Query new handles after that reparse.
 Compare-before-write protects against silently replacing bytes changed by
 another editor or process. It is optimistic conflict detection, not a
 filesystem lock.
+
+After a conflict, keep the pending diff for review, reopen the current file,
+and reapply the intended change against its updated content. Do not disable
+comparison merely to force a stale write over another editor's changes.
 
 Protected `saveAs()` can create a new target but refuses to replace an existing
 file that this document did not open. The default comparison option remains
